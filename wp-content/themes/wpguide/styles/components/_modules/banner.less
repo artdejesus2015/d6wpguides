@@ -1,0 +1,34 @@
+.banner-bg {
+  height: 850px;
+  position: relative;
+
+  &:before {
+    content: '';
+    background-color: @blue;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    .opacity(.9);
+  }
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  .translate(0,-50%);
+  left: 10%;
+  max-width: 600px;
+}
+
+.banner-content-img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  .translate(0,-50%);
+
+  img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}

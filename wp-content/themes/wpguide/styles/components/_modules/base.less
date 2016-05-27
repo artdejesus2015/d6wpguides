@@ -1,0 +1,109 @@
+// ==================================================================================
+// Base
+// ==================================================================================
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  font-family: @proxima-reg;
+  line-height: 1.8;
+  color: @body-color;
+}
+
+p {
+  margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    width: auto;
+  }
+}
+
+a {
+  font-family: @proxima-semi;
+  .transition(all ease-in-out .3s);
+  color: #06bbe8;
+  outline: none !important;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    outline: none !important;
+    color: #1C9BBB;
+  }
+}
+
+// tags
+h1, h2, h3, h4, h5, h6 {
+  font-family: @neuzeit;
+  color: #222222;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 35px;
+  margin: 5px 0 25px 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+// List
+ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: block;
+    vertical-align: top;
+
+    a {
+      display: block;
+    }
+  }
+}
+
+.wp-guides-sidebar {
+  ul {
+    li {
+      a {
+        font-size: 14px;
+        border-right: 2px solid #e8e9e9;
+        color: #444444;
+
+        &:hover {
+          color: @blue;
+          border-right: 2px solid @blue;
+        }
+      }
+    }
+  }
+}

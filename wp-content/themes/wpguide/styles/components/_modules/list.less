@@ -1,0 +1,77 @@
+.wp-guides-sidebar {
+  &.affix {
+    position: fixed;
+    top: 20px;
+    width: 263px;
+  }
+}
+.sidebar-menu {
+   > li {
+     > a {
+      padding: 5px 0;
+      text-transform: uppercase;
+    }
+
+     ul {
+       display: none;
+     }
+  }
+
+  > li.active {
+
+    > a {
+      color: @blue;
+      border-right: 2px solid @blue;
+    }
+
+    ul {
+      display: block;
+      padding-left: 1.2em;
+
+      > li {
+        > a {
+          padding: 5px 0;
+        }
+      }
+
+      > li.active {
+        a {
+          color: @blue;
+          border-right: 2px solid @blue;
+        }
+      }
+    }
+  }
+}
+
+.sidebar-list-content {
+  margin-bottom: 2.5em;
+}
+
+.sidebar-list-child-content {
+  margin: 25px 0;
+}
+
+.featured-list {
+  margin-left: 2em;
+  margin-bottom: 25px;
+
+  > li {
+    display: list-item;
+    padding: 4px 0;
+
+    p {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.featured-number {
+  > li {
+    list-style-type: decimal;
+  }
+}

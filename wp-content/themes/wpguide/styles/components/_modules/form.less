@@ -1,0 +1,39 @@
+.form-control{
+  border-radius: 5px;
+  box-shadow: none;
+  height: initial;
+  font-family: @proxima-semi;
+  border-color: #8e8e8e;
+  background: #fff;
+  margin: 0;
+  padding: 15px 20px;
+
+  &:focus {
+    border-color: @primary-color;
+    box-shadow: none;
+  }
+
+  ::-webkit-input-placeholder {color:#a1a1a1;}
+  :-moz-placeholder {color:#a1a1a1;}
+  ::-moz-placeholder {color:#a1a1a1;}
+  :-ms-input-placeholder {color:#a1a1a1;}
+
+}
+
+textarea {
+  width: 100%;
+  min-height: 172px;
+  resize: none;
+  border-color: #8e8e8e;
+  color: #a1a1a1;
+  font-family: @proxima-semi;
+  font-size: 14px;
+  padding: 15px 20px;
+  border-radius: 5px;
+
+  &:focus {
+    outline: none;
+    border-color: @primary-color;
+    box-shadow: none;
+  }
+}
